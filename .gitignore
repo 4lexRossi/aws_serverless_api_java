@@ -1,0 +1,7 @@
+target/*
+*.idea/*
+*.iml*
+barber_serverless_api/**/target/*
+serverless-repository/**/target/*
+serverless-barbershop/**/target/*
+.metadata
