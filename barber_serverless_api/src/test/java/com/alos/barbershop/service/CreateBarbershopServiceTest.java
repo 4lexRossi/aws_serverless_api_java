@@ -82,9 +82,9 @@ public class CreateBarbershopServiceTest {
     }
 
     private CreateBarbershopCommand createBarbershopCommand() {
-        var name = "Barbearia do Rodrigo";
+        var name = "Barbearia do Alex";
         var address = "Avenida Paulista, 201";
-        var city = "São Paulo";
+        var city = "Piracicaba";
         var availability = createAvailabilityCommand();
 
         return new CreateBarbershopCommand(name, address, city, availability);

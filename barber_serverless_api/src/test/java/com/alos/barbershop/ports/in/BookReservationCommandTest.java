@@ -15,7 +15,7 @@ public class BookReservationCommandTest {
 
     @Test
     void whenRequiredReservationFieldsAreInformedThenItShouldBeCreated() {
-        var barbershopName = "Barbearia do Rodrigo";
+        var barbershopName = "Barbearia do Alex";
         var today = LocalDate.now();
         var dayOfWeek = DayOfWeek.FRIDAY;
         var customerCommand = createCommand();
@@ -32,7 +32,7 @@ public class BookReservationCommandTest {
 
     @Test
     void whenAnyNonRequiredReservationFieldsIsInformedThenAnExceptionShouldBeThrown() {
-        var barbershopName = "Barbearia do Rodrigo";
+        var barbershopName = "Barbearia do Alex";
         var today = LocalDate.now();
         var customerCommand = createCommand();
 
@@ -42,8 +42,8 @@ public class BookReservationCommandTest {
     }
 
     private CustomerCommand createCommand() {
-        var name = "Rodrigo Peleias";
-        var email = "teste@email.com";
+        var name = "Alex Rossi";
+        var email = "alex@email.com";
         var phone = "(11)99999-99999";
 
         return new CustomerCommand(name, email, phone);

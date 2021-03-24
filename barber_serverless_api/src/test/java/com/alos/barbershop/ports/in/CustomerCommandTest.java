@@ -11,8 +11,8 @@ public class CustomerCommandTest {
 
     @Test
     void whenCustomerIsInformedThenItShouldBeCreated() {
-        var name = "Rodrigo Peleias";
-        var email = "teste@email.com";
+        var name = "Alex Rossi";
+        var email = "alex@email.com";
         var phone = "(11)99999-99999";
 
         CustomerCommand customerCommand = new CustomerCommand(name, email, phone);
@@ -24,8 +24,8 @@ public class CustomerCommandTest {
 
     @Test
     void whenAnyNonRequiredCustomerFieldIsInformedThenAnExceptionShouldBeThrown() {
-        var name = "Rodrigo Peleias";
-        var email = "teste@email.com";
+        var name = "Alex Rossi";
+        var email = "alex@email.com";
 
         assertThrows(ConstraintViolationException.class, () -> new CustomerCommand(name, email, null));
     }
