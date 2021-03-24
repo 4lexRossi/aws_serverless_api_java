@@ -9,9 +9,9 @@ public class CustomerTest {
 
     @Test
     void whenCustomerPropertiesAreGivenThenItShouldBeCreated() {
-        var expectedName = "Rodrigo Peleias";
-        var expectedEmail = "rodrigo@email.com";
-        var expectedPhone = "(11)99991-1234";
+        var expectedName = "Alex Rossi";
+        var expectedEmail = "Alex@email.com";
+        var expectedPhone = "(11)11111-1111";
 
         var customer = Customer.of(expectedName, expectedEmail, expectedPhone);
 

@@ -7,9 +7,9 @@ import static com.alos.barbershop.utils.AvailabilityUtils.createAvailability;
 public class BarbershopUtils {
 
     public static Barbershop createBarbershop() {
-        var expectedName = "Barbearia do Rodrigo";
+        var expectedName = "Barbearia do Alex";
         var expectedAddress = "Avenida Paulista 201";
-        var expectedCity = "São Paulo";
+        var expectedCity = "Piracicaba";
 
         var barbershop = Barbershop.builder()
                 .name(expectedName)

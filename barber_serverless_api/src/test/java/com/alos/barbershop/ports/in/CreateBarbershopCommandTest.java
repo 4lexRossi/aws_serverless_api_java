@@ -15,9 +15,9 @@ public class CreateBarbershopCommandTest {
 
     @Test
     void whenCreateCommandIsGivenThenItShouldBeCreated() {
-        var name = "Barbearia do Rodrigo";
+        var name = "Barbearia do Alex";
         var address = "Avenida Paulista, 201";
-        var city = "São Paulo";
+        var city = "Piracicaba";
         var availability = createAvailability();
 
         CreateBarbershopCommand command = new CreateBarbershopCommand(name, address, city, availability);
@@ -30,9 +30,9 @@ public class CreateBarbershopCommandTest {
 
     @Test
     void whenCreateCommandWithoutRequiredFieldIsGivenThenAnExceptionShouldBeThrown() {
-        var name = "Barbearia do Rodrigo";
+        var name = "Barbearia do Alex";
         var address = "Avenida Paulista, 201";
-        var city = "São Paulo";
+        var city = "Piracicaba";
 
         assertThrows(ConstraintViolationException.class, () -> new CreateBarbershopCommand(name, address, city, null));
     }
